@@ -5,7 +5,6 @@
     <meta name="index" content="width=device-width, initial-scale=1.0">
     <title>广西特色器物几何分析合集</title>
     <style>
-        /* 通用样式 */
         * {
             margin: 0;
             padding: 0;
@@ -30,7 +29,6 @@
             text-align: center;
             margin-bottom: 30px;
         }
-        /* 跳转卡片样式 */
         .card-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -103,8 +101,6 @@
             color: #888;
             font-size: 0.9em;
         }
-
-        /* 子页面样式 */
         .sub-page {
             display: none;
         }
@@ -158,8 +154,6 @@
             border-radius: 8px;
             border: 2px solid #eee;
         }
-
-        /* 铜鼓子页面样式 */
         #tonggu-page h2 {
             border-left-color: #5a3921;
         }
@@ -172,8 +166,6 @@
         #tonggu-page .geo-card h3 {
             color: #5a3921;
         }
-
-        /* 绣球子页面样式 */
         #xiuqiu-page h2 {
             border-left-color: #d92b2b;
         }
@@ -186,8 +178,6 @@
         #xiuqiu-page .geo-card h3 {
             color: #d92b2b;
         }
-
-        /* 风雨桥子页面样式 */
         #bridge-page h2 {
             border-left-color: #8B4513;
         }
@@ -203,184 +193,110 @@
     </style>
 </head>
 <body>
-    <!-- 主页面 -->
-    <div id="main-page" class="container">
-        <h1>广西特色器物几何抽象分析合集</h1>
-        <div class="card-grid">
-            <!-- 铜鼓卡片 -->
-            <div class="card tonggu">
-                <h2>明代游旗纹铜鼓</h2>
-                <p>分析铜鼓的圆柱体、圆形/圆环等几何构成与文化意义</p>
-                <a href="javascript:showPage('tonggu-page')">查看详情</a>
-            </div>
 
-            <!-- 绣球卡片 -->
-            <div class="card xiuqiu">
-                <h2>壮族绣球</h2>
-                <p>分析绣球的球体、圆柱体等几何构成与文化意义</p>
-                <a href="javascript:showPage('xiuqiu-page')">查看详情</a>
-            </div>
-
-            <!-- 风雨桥卡片 -->
-            <div class="card bridge">
-                <h2>三江风雨桥</h2>
-                <p>分析风雨桥的长方体、棱锥等几何构成与文化意义</p>
-                <a href="javascript:showPage('bridge-page')">查看详情</a>
-            </div>
+<div id="main-page" class="container">
+    <h1>广西特色器物几何抽象分析合集</h1>
+    <div class="card-grid">
+        <div class="card tonggu">
+            <h2>明代游旗纹铜鼓</h2>
+            <p>分析铜鼓的圆柱体、圆形/圆环等几何构成与文化意义</p>
+            <a href="javascript:showPage('tonggu-page')">查看详情</a>
         </div>
-        <footer>
-            壹柳寻味 · 劳动实践活动提交
-        </footer>
+        <div class="card xiuqiu">
+            <h2>壮族绣球</h2>
+            <p>分析绣球的球体、圆柱体等几何构成与文化意义</p>
+            <a href="javascript:showPage('xiuqiu-page')">查看详情</a>
+        </div>
+        <div class="card bridge">
+            <h2>三江风雨桥</h2>
+            <p>分析风雨桥的长方体、棱锥等几何构成与文化意义</p>
+            <a href="javascript:showPage('bridge-page')">查看详情</a>
+        </div>
     </div>
+    <footer>壹柳寻味 · 劳动实践活动提交</footer>
+</div>
 
-    <!-- 铜鼓子页面 -->
-    <div id="tonggu-page" class="sub-page container">
-        <a href="javascript:showPage('main-page')" class="back-btn">← 返回首页</a>
-        <h1>明代游旗纹铜鼓 · 几何抽象分析</h1>
-
-        <div class="section">
-            <h2>一、实物照片</h2>
-            <div class="photo-container">
-                <img src="图片/铜鼓.jpg" alt="明代游旗纹铜鼓">
-            </div>
+<div id="tonggu-page" class="sub-page container">
+    <a href="javascript:showPage('main-page')" class="back-btn">← 返回首页</a>
+    <h1>明代游旗纹铜鼓 · 几何抽象分析</h1>
+    <div class="section">
+        <h2>一、实物照片</h2>
+        <div class="photo-container">
+            <img src="图片/铜鼓.jpg" alt="明代游旗纹铜鼓">
         </div>
-
-        <div class="section">
-            <h2>二、构成的基础几何体</h2>
-            <div class="geo-grid">
-                <div class="geo-card">
-                    <h3>圆柱体</h3>
-                    <p class="geo-desc">铜鼓主体为扁圆柱体，鼓面为圆形平面</p>
-                </div>
-                <div class="geo-card">
-                    <h3>圆形/圆环</h3>
-                    <p class="geo-desc">鼓面纹饰由多层同心圆构成，体现对称美学</p>
-                </div>
-                <div class="geo-card">
-                    <h3>射线/三角形</h3>
-                    <p class="geo-desc">中心八角星纹由8个等腰三角形/射线组成</p>
-                </div>
-                <div class="geo-card">
-                    <h3>长方体棱柱</h3>
-                    <p class="geo-desc">透明展架由多块长方体亚克力板拼接而成</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>三、几何与文化意义</h2>
-            <p>铜鼓是广西少数民族文化的重要符号：以圆柱体为主体，鼓面的同心圆与射线纹饰，既体现了先民对圆形、对称等几何规律的掌握，也象征着对太阳、天地的崇拜。其规整的几何造型，是实用功能与精神信仰的完美结合，展现了古代工匠的高超技艺与文化智慧。</p>
-        </div>
-
-        <footer>
-            壹柳寻味 · 劳动实践活动提交
-        </footer>
     </div>
-
-    <!-- 绣球子页面 -->
-    <div id="xiuqiu-page" class="sub-page container">
-        <a href="javascript:showPage('main-page')" class="back-btn">← 返回首页</a>
-        <h1>壮族绣球 · 几何抽象分析</h1>
-
-        <div class="section">
-            <h2>一、实物照片</h2>
-            <div class="photo-container">
-                <img src="图片/绣球.jpg" alt="壮族绣球实物照片">
-            </div>
+    <div class="section">
+        <h2>二、构成的基础几何体</h2>
+        <div class="geo-grid">
+            <div class="geo-card"><h3>圆柱体</h3><p class="geo-desc">铜鼓主体为扁圆柱体</p></div>
+            <div class="geo-card"><h3>圆形/圆环</h3><p class="geo-desc">鼓面多层同心圆对称美学</p></div>
+            <div class="geo-card"><h3>射线/三角形</h3><p class="geo-desc">中心八角星纹结构</p></div>
+            <div class="geo-card"><h3>长方体棱柱</h3><p class="geo-desc">展架亚克力板结构</p></div>
         </div>
-
-        <div class="section">
-            <h2>二、构成的基础几何体</h2>
-            <div class="geo-grid">
-                <div class="geo-card">
-                    <h3>球体</h3>
-                    <p class="geo-desc">绣球主体，由多块彩布拼接而成的近似球体</p>
-                </div>
-                <div class="geo-card">
-                    <h3>圆柱体</h3>
-                    <p class="geo-desc">顶部挂绳、流苏穗子，均为细长圆柱体/圆柱束</p>
-                </div>
-                <div class="geo-card">
-                    <h3>小球体</h3>
-                    <p class="geo-desc">装饰用的金色圆珠，点缀在拼接缝与流苏顶部</p>
-                </div>
-                <div class="geo-card">
-                    <h3>多边形面</h3>
-                    <p class="geo-desc">单块布面为菱形/多边形，共同构成多面球体</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>三、几何与文化意义</h2>
-            <p>壮族绣球是民间工艺与几何美学的结合：对称的球体、放射状的流苏，既体现了壮族人民对几何平衡的理解，也承载着平安、吉祥的美好寓意，是三月三民俗文化的重要符号。</p>
-        </div>
-
-        <footer>
-            壹柳寻味 · 劳动实践活动提交
-        </footer>
     </div>
-
-    <!-- 风雨桥子页面 -->
-    <div id="bridge-page" class="sub-page container">
-        <a href="javascript:showPage('main-page')" class="back-btn">← 返回首页</a>
-        <h1>三江风雨桥 · 几何抽象分析</h1>
-
-        <div class="section">
-            <h2>一、实物照片</h2>
-            <div class="photo-container">
-                <img src="图片/风雨桥.jpg" alt="三江风雨桥实物照片">
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>二、构成的基础几何体</h2>
-            <div class="geo-grid">
-                <div class="geo-card">
-                    <h3>长方体（棱柱）</h3>
-                    <p class="geo-desc">廊桥主体、桥面，整体为长条形棱柱结构</p>
-                </div>
-                <div class="geo-card">
-                    <h3>棱锥+棱柱</h3>
-                    <p class="geo-desc">桥亭鼓楼的尖顶为棱锥，层层屋檐为梯形棱柱组合</p>
-                </div>
-                <div class="geo-card">
-                    <h3>圆柱体</h3>
-                    <p class="geo-desc">支撑廊檐的立柱，为规则圆柱体</p>
-                </div>
-                <div class="geo-card">
-                    <h3>球体/椭球体</h3>
-                    <p class="geo-desc">廊檐下的红色灯笼，近似球体形态</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>三、几何与文化意义</h2>
-            <p>三江风雨桥是侗族建筑技艺的代表：以长方体廊桥为主体，搭配对称的多层棱锥桥亭，通过圆柱立柱支撑，形成了稳固又富有韵律的几何结构。它不仅是交通设施，更是侗族人民智慧与文化的象征，体现了对称美、平衡美与实用功能的完美结合。</p>
-        </div>
-
-        <footer>
-            壹柳寻味 · 劳动实践活动提交
-        </footer>
+    <div class="section">
+        <h2>三、几何与文化意义</h2>
+        <p>铜鼓是广西少数民族文化的重要符号：以圆柱体为主体，鼓面的同心圆与射线纹饰，既体现了先民对圆形、对称等几何规律的掌握，也象征着对太阳、天地的崇拜。其规整的几何造型，是实用功能与精神信仰的完美结合，展现了古代工匠的高超技艺与文化智慧。</p>
     </div>
+    <footer>壹柳寻味 · 劳动实践活动提交</footer>
+</div>
 
-    <script>
-        // 页面切换函数
-        function showPage(pageId) {
-            // 隐藏所有页面
-            const allPages = document.querySelectorAll('.container');
-            allPages.forEach(page => {
-                page.style.display = 'none';
-            });
-            // 显示目标页面
-            document.getElementById(pageId).style.display = 'block';
-        }
+<div id="xiuqiu-page" class="sub-page container">
+    <a href="javascript:showPage('main-page')" class="back-btn">← 返回首页</a>
+    <h1>壮族绣球 · 几何抽象分析</h1>
+    <div class="section">
+        <h2>一、实物照片</h2>
+        <div class="photo-container">
+            <img src="图片/绣球.jpg" alt="壮族绣球实物照片">
+        </div>
+    </div>
+    <div class="section">
+        <h2>二、构成的基础几何体</h2>
+        <div class="geo-grid">
+            <div class="geo-card"><h3>球体</h3><p class="geo-desc">绣球主体近似球体</p></div>
+            <div class="geo-card"><h3>圆柱体</h3><p class="geo-desc">挂绳、流苏为细长圆柱</p></div>
+            <div class="geo-card"><h3>小球体</h3><p class="geo-desc">装饰圆珠点缀</p></div>
+            <div class="geo-card"><h3>多边形面</h3><p class="geo-desc">布面菱形拼接成球</p></div>
+        </div>
+    </div>
+    <div class="section">
+        <h2>三、几何与文化意义</h2>
+        <p>壮族绣球是民间工艺与几何美学的结合：对称的球体、放射状的流苏，既体现了壮族人民对几何平衡的理解，也承载着平安、吉祥的美好寓意，是三月三民俗文化的重要符号。</p>
+    </div>
+    <footer>壹柳寻味 · 劳动实践活动提交</footer>
+</div>
 
-        // 初始显示首页
-        window.onload = function() {
-            showPage('main-page');
-        }
-    </script>
+<div id="bridge-page" class="sub-page container">
+    <a href="javascript:showPage('main-page')" class="back-btn">← 返回首页</a>
+    <h1>三江风雨桥 · 几何抽象分析</h1>
+    <div class="section">
+        <h2>一、实物照片</h2>
+        <div class="photo-container">
+            <img src="图片/风雨桥.jpg" alt="三江风雨桥实物照片">
+        </div>
+    </div>
+    <div class="section">
+        <h2>二、构成的基础几何体</h2>
+        <div class="geo-grid">
+            <div class="geo-card"><h3>长方体（棱柱）</h3><p class="geo-desc">廊桥主体长条形棱柱</p></div>
+            <div class="geo-card"><h3>棱锥+棱柱</h3><p class="geo-desc">桥亭尖顶与屋檐组合</p></div>
+            <div class="geo-card"><h3>圆柱体</h3><p class="geo-desc">支撑立柱为圆柱</p></div>
+            <div class="geo-card"><h3>球体/椭球体</h3><p class="geo-desc">灯笼近似球体</p></div>
+        </div>
+    </div>
+    <div class="section">
+        <h2>三、几何与文化意义</h2>
+        <p>三江风雨桥是侗族建筑技艺的代表：以长方体廊桥为主体，搭配对称的多层棱锥桥亭，通过圆柱立柱支撑，形成了稳固又富有韵律的几何结构。它不仅是交通设施，更是侗族人民智慧与文化的象征，体现了对称美、平衡美与实用功能的完美结合。</p>
+    </div>
+    <footer>壹柳寻味 · 劳动实践活动提交</footer>
+</div>
+
+<script>
+function showPage(pageId) {
+    document.querySelectorAll('.container').forEach(p => p.style.display = 'none');
+    document.getElementById(pageId).style.display = 'block';
+}
+window.onload = () => showPage('main-page');
+</script>
 </body>
 </html>
